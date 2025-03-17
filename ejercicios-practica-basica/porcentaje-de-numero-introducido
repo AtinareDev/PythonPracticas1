@@ -1,0 +1,6 @@
+# pedimos un numero y calculamos su porcentaje
+elemento1 = int(input("Ingrese el primer número: "))
+elemento2 = int(input("Ingrese el porcentaje a aplicar: "))
+
+resultado = (elemento1 * elemento2) / 100
+print(f"El {elemento2}% de {elemento1} es: {resultado}")

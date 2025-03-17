@@ -1,6 +1,7 @@
 # Importamos la clase Numero desde el archivo 'numeros.py' dentro de la misma carpeta 'operadores'
 from numeros import dato_numero
 
+
 class Aritmeticos:
     def __init__(self):
         # Creamos una instancia de la clase Numero
@@ -19,6 +20,7 @@ class Aritmeticos:
             resultado *= num  # Multiplicamos todos los números en la lista
         print(f"Resultado de la multiplicación: {resultado}")
         return resultado
+
     def restar(self):
         # Restamos todos los números de la lista de forma secuencial
         resultado = self.numeros.lista_numeros[0]
@@ -57,4 +59,12 @@ class Aritmeticos:
         for num in self.numeros.lista_numeros[1:]:
             resultado %= num  # Calculamos el resto de la división
         print(f"Resultado del resto (módulo): {resultado}")
+        return resultado
+
+    def exponente(self):
+        # Elevamos el primer número de la lista a la potencia de los siguientes números secuencialmente
+        resultado = self.numeros.lista_numeros[0]
+        for num in self.numeros.lista_numeros[1:]:
+            resultado **= num  # Elevamos el número al exponente
+        print(f"Resultado de la operación de exponente: {resultado}")
         return resultado
