@@ -25,3 +25,8 @@ else:
 # os.remove('fichero.txt')
 # os.remove('fichero_renombrado.txt')
 # print('Archivos eliminados')
+
+# listar_archivos_directorio(ruta)
+# print('Archivos en el directorio actual:')
+# for archivo in os.listdir('.'):
+#     print(archivo)
